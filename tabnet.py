@@ -2,7 +2,7 @@
 import pandas as pd
 import tensorflow_addons as tfa
 import numpy as np
-from sklearn.metrics import balanced_accuracy_score,accuracy_score,roc_curve,auc,recall_score,precision_score,f1_score
+from sklearn.metrics import balanced_accuracy_score,accuracy_score
 import keras
 import keras.backend as K
 import tensorflow as tf
