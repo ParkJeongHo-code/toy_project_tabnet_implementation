@@ -1,12 +1,8 @@
 
-import pandas as pd
 import tensorflow_addons as tfa
-import numpy as np
 from sklearn.metrics import balanced_accuracy_score,accuracy_score
-import keras
 import keras.backend as K
 import tensorflow as tf
-import random
 from tensorflow.keras import optimizers
 from collections import Counter
 
@@ -21,7 +17,6 @@ if gpus:
     # 프로그램 시작시에 가상 장치가 설정되어야만 합니다
     print(e)
 
-import sklearn
 import shap
 
 shap.initjs()
@@ -180,7 +175,6 @@ for i in range(20):
     for key in result:
         print(key, result[key])
     train_x.index=list(range(train_x.shape[0]))
-    #train_lbls.index=list(range(train_x.shape[0]))
     bacc=balanced_accuracy_score(list(train_lbls),preds)
     acc=accuracy_score(list(train_lbls),preds)
 
@@ -207,7 +201,6 @@ for i in range(20):
     for key in result:
         print(key, result[key])
     test_x.index=list(range(test_x.shape[0]))
-    #test_lbls.index=list(range(test_x.shape[0]))
     bacc=balanced_accuracy_score(list(test_lbls),preds)
     acc=accuracy_score(list(test_lbls),preds)
 
